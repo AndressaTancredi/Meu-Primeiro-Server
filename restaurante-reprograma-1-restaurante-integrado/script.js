@@ -27,6 +27,7 @@ fetch(`http://localhost:3000/comidas`)
         return response.json();
     })
     .then((data) =>{
+     console.log(data)
         data.pratosFavoritos.forEach(prato => {
             console.log(prato)
 
